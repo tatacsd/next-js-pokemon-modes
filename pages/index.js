@@ -25,6 +25,9 @@ export default function Home() {
       <Head>
         <title>Pokemon List</title>
       </Head>
+      <div className={styles.header}>
+        <h1>Pokemon List</h1>
+      </div>
       <div className={styles.grid}>
         {pokemons.map((pokemon) => (
           <div className={styles.card} key={pokemon.id}>
