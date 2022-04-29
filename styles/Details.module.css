@@ -1,7 +1,28 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .layout{
   display: grid;
   grid-template-columns: 1fr 5fr;
-  column-gap: 1rem;
+  column-gap: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0px 3px 5px rgb(160, 154, 154);
+  padding: 3rem;
+  text-align: center;
+  background-color: white;
+  text-align: center;
+
+}
+
+.info {
+  text-align: center;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
 .name {
@@ -23,5 +44,9 @@
 .image {
   max-height: 400px;
   max-width: 400px;
+}
+
+.back {
+  cursor: pointer;
 }
 
