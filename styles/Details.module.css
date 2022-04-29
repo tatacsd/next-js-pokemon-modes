@@ -1,6 +1,7 @@
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
+  padding: 3rem;
 }
 
 .layout{
@@ -56,6 +57,39 @@
 }
 
 .back {
+  padding-left: 1rem;
   cursor: pointer;
+}
+
+/* mobile resolution */
+@media (max-width: 687px) {
+
+  .container {
+    padding: 1rem;
+  }
+
+  .layout{
+    display: grid;
+    /* row */
+    grid-template-columns: 1fr;
+   
+  
+  }
+
+  .image {
+    max-height: 100px;
+    max-width: 100px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+}
+
+/* tablet */
+@media (min-width: 688px) and (max-width: 768px) {
+  .image {
+    max-height: 200px;
+    max-width: 200px;
+  }
 }
 
