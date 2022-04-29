@@ -24,7 +24,10 @@ export default function PokemonDetails() {
     }, [id])
 
     if (!pokemon) {
-        return <div>No pokemon</div>
+        // return a gif loading...
+        return <div className={styles.loading}>
+            <Image src="/loading.gif" alt="back" width={300} height={300} />
+        </div>
     }
 
 
@@ -69,7 +72,5 @@ export default function PokemonDetails() {
                 </div>
             </div>
         </div>
-
-
     </div>
 }
